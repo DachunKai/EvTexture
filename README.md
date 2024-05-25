@@ -3,4 +3,4 @@ EvTexture: Event-driven Texture Enhancement for Video Super-Resolution (ICML 202
 #### Dachun Kai, Jiayao Lu, Yueyi Zhang, Xiaoyan Sun
 #### University of Science and Technology of China
 
-### Code and paper will be updated...
+### Code, data, inference results and paper will be updated.
