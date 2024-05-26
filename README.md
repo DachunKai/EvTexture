@@ -3,4 +3,4 @@
 #### Dachun Kai, Jiayao Lu, Yueyi Zhang, Xiaoyan Sun
 #### University of Science and Technology of China
 
-### Code, data, inference results and paper will be updated.
+### The code, data and paper will be released before the end of June, 2024.
