@@ -17,9 +17,9 @@ This is the official Pytorch implementation of "EvTexture: Event-driven Texture 
 - [ ] Release details to prepare datasets
 - [ ] Publish docker image
 - [ ] Release pretrained models and test sets for quick testing
-- 7 June 2024: Video demos released
-- 25 May 2024: Initialize the repository
-- 2 May 2024: :tada: :tada: Our paper was accepted in ICML'2024
+- [x] 2024/06/07: Video demos released
+- [x] 2024/05/25: Initialize the repository
+- [x] 2024/05/02: :tada: :tada: Our paper was accepted in ICML'2024
 
 ## :bookmark: Table of Content
 1. [Video Demos](#video-demos)
