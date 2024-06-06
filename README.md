@@ -23,8 +23,8 @@ This is the official Pytorch implementation of "EvTexture: Event-driven Texture 
 3. [Citation](#citation)
 4. [Contact](#contact)
 
-## Video Demos
-The videos have been compressed. Therefore, the results are inferior to that of the actual outputs.
+## :fire: Video Demos
+A $4\times$ upsampling results on the [Vid4](https://paperswithcode.com/sota/video-super-resolution-on-vid4-4x-upscaling) and [REDS4](https://paperswithcode.com/dataset/reds) test sets. The videos have been compressed. Therefore, the results are inferior to that of the actual outputs.
 
 https://github.com/DachunKai/EvTexture/assets/66354783/fcf48952-ea48-491c-a4fb-002bb2d04ad3
 
