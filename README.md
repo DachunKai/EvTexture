@@ -4,11 +4,9 @@
 📃 <a href="https://drive.google.com/file/d/1RWptb35a-z-hwc3gZZY-FPd_G8g8Up1d/view?usp=sharing" target="_blank">[Paper]</a>
 </p>
 
-This is the official Pytorch implementation of "EvTexture: Event-driven Texture Enhancement for Video Super-Resolution" paper (ICML 2024).  This repository contains *codes* and *video demos* of our work.
+This is the official Pytorch implementation of "EvTexture: Event-driven Texture Enhancement for Video Super-Resolution" paper (ICML 2024).  This repository contains *video demos* and *codes* of our work.
 
 **Authors**: [Dachun Kai](https://github.com/DachunKai/)<sup>[:email:️](mailto:dachunkai@mail.ustc.edu.cn)</sup>, Jiayao Lu, [Yueyi Zhang](https://scholar.google.com.hk/citations?user=LatWlFAAAAAJ&hl=zh-CN&oi=ao)<sup>[:email:️](mailto:zhyuey@ustc.edu.cn)</sup>, [Xiaoyan Sun](https://scholar.google.com/citations?user=VRG3dw4AAAAJ&hl=zh-CN), *University of Science and Technology of China*
-
-**Acknowedgement**: Our work is built upon [BasicSR](https://github.com/XPixelGroup/BasicSR), which is an open source toolbox for image/video restoration tasks.
 
 **Feel free to ask questions. If you gain insights from our work, please don't hesitate to give us a :star:!**
 
