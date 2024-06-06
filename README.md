@@ -25,7 +25,8 @@ This is the official Pytorch implementation of "EvTexture: Event-driven Texture 
 1. [Video Demos](#video-demos)
 2. [Code](#code)
 3. [Citation](#citation)
-4. [Contact](#contact)
+4. [License and Acknowledgement](#license-and-acknowledgement)
+5. [Contact](#contact)
 
 ## :fire: Video Demos
 A $4\times$ upsampling results on the [Vid4](https://paperswithcode.com/sota/video-super-resolution-on-vid4-4x-upscaling) and [REDS4](https://paperswithcode.com/dataset/reds) test sets. The videos have been compressed. Therefore, the results are inferior to that of the actual outputs.
@@ -41,6 +42,10 @@ https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-c
 ## Code
 
 ## Citation
+
+## License and Acknowledgement
+This project is released under the Apache-2.0 license. Our work is built upon [BasicSR](https://github.com/XPixelGroup/BasicSR), which is an open source toolbox for image/video restoration tasks. Thanks to the inspirations and codes from [RAFT](https://github.com/princeton-vl/RAFT) and [event_utils](https://github.com/TimoStoff/event_utils).
+
 
 ## Contact
 If you meet any problems, please describe them in issues or contact:
