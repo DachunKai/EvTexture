@@ -14,7 +14,7 @@ This is the official Pytorch implementation of "EvTexture: Event-driven Texture 
 - [ ] Release training code
 - [ ] Release details to prepare datasets
 - [ ] Publish docker image
-- [ ] Release pretrained models and test sets for quick testing
+- [x] Release pretrained models and test sets for quick testing
 - [x] 2024/06/07: Video demos released
 - [x] 2024/05/25: Initialize the repository
 - [x] 2024/05/02: :tada: :tada: Our paper was accepted in ICML'2024
@@ -38,6 +38,12 @@ https://github.com/DachunKai/EvTexture/assets/66354783/e1e6b340-64b3-4d94-90ee-5
 https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-ced0c1bff9c4
 
 ## Code
+### Model and results
+Pre-trained models can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab), [google drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg) (n8hg).
+* *EvTexture_REDS_BIx4.pth*: trained on REDS dataset with BI degradation for $4\times$ SR scale.
+* *EvTexture_Vimeo90K_BIx4.pth*: trained on Vimeo-90K dataset with BI degradation for $4\times$ SR scale.
+
+The output results on REDS4 and Vid4 can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab), [google drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg) (n8hg).
 
 ## Citation
 
