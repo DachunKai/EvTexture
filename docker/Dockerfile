@@ -32,6 +32,8 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         ca-certificates \
         wget \
         cmake \
+        unzip \
+        vim-gtk3 \
         git \
         g++ \
         gcc \

@@ -3,6 +3,7 @@ argparse
 einops
 future
 h5py
+lpips
 lmdb
 matplotlib
 numpy>=1.17
