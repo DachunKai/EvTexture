@@ -44,6 +44,28 @@ Pre-trained models can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71
 * *EvTexture_Vimeo90K_BIx4.pth*: trained on Vimeo-90K dataset with BI degradation for $4\times$ SR scale.
 
 The output results on REDS4 and Vid4 can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab), [google drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg) (n8hg).
+### Installation
+We recommend setting up evtexture environment in either [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) or [Docker](https://www.docker.com/). We provide these two options, and **we also provide a Docker image**. :clap:
+
+1. Run in Conda
+* Environment: [Anaconda Python 3.7](https://www.anaconda.com/products/individual), [CUDA Toolkit 11.1.1](https://developer.nvidia.com/cuda-11.1.1-download-archive)
+
+* Prepare some installation packages: [torch 1.10.2+cu111](https://download.pytorch.org/whl/cu111/torch-1.10.2%2Bcu111-cp37-cp37m-linux_x86_64.whl), and [torchvision 0.11.3+cu111](https://download.pytorch.org/whl/cu111/torchvision-0.11.3%2Bcu111-cp37-cp37m-linux_x86_64.whl).
+
+```bash
+conda create -y -n evtexture python=3.7
+conda activate evtexture
+pip install torch-1.10.2+cu111-cp37-cp37m-linux_x86_64.whl
+pip install torchvision-0.11.3+cu111-cp37-cp37m-linux_x86_64.whl
+git clone https://github.com/DachunKai/EvTexture.git
+cd EvTexture
+pip install -r requirements.txt
+python setup.py develop
+```
+
+
+
+2. Run in Docker
 
 ## :blush: Citation
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :smiley:

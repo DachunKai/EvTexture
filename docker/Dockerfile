@@ -23,6 +23,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         ca-certificates \
         wget \
         cmake \
+        git \
         g++ \
         gcc \
         libboost-dev \
@@ -37,8 +38,8 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
 # =================================================================
 # Torch, Torchvision and EvTexture
 # ----------------------------------------------------------------
-    wget --quiet https://download.pytorch.org/whl/cu111/torch-1.10.2%2Bcu111-cp37-cp37m-linux_x86_64.whl -O /tmp/ && \
-    wget --quiet https://download.pytorch.org/whl/cu111/torchvision-0.11.3%2Bcu111-cp37-cp37m-linux_x86_64.whl -O /tmp/ && \
+    wget --quiet https://download.pytorch.org/whl/cu111/torch-1.10.2%2Bcu111-cp37-cp37m-linux_x86_64.whl -O /tmp/torch-1.10.2+cu111-cp37-cp37m-linux_x86_64.whl && \
+    wget --quiet https://download.pytorch.org/whl/cu111/torchvision-0.11.3%2Bcu111-cp37-cp37m-linux_x86_64.whl -O /tmp/torchvision-0.11.3+cu111-cp37-cp37m-linux_x86_64.whl && \
     git clone https://github.com/DachunKai/EvTexture -O /EvTexture/ && \
 # =================================================================
 # Miniconda3
@@ -49,7 +50,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
 # dependencys for environment evtexture
     conda update conda && \
     conda create -y -n evtexture python=3.7 && \
-    /bin/bash -c "source activate evtexture && pip install --upgrade pip && pip --no-cache-dir install /tmp/torch-1.10.2+cu111-cp37-cp37m-linux_x86_64.whl && pip --no-cache-dir install /tmp/torchvision-0.11.3+cu111-cp37-cp37m-linux_x86_64.whl && pip --no-cache-dir install opencv-python pyyaml argparse h5py numpy pandas scikit-image lmdb tensorboard tqdm Pillow einops tb-nightly matplotlib wandb setuptools && cd /EvTexture && pip install -r requirements.txt && python setup.py develop" && \
+    /bin/bash -c "source activate evtexture && pip install --upgrade pip && pip --no-cache-dir install /tmp/torch-1.10.2+cu111-cp37-cp37m-linux_x86_64.whl && pip --no-cache-dir install /tmp/torchvision-0.11.3+cu111-cp37-cp37m-linux_x86_64.whl && cd /EvTexture && pip --no-cache-dir install -r requirements.txt && python setup.py develop" && \
 # =================================================================
 # cleanup
 #-----------------------------------------------------------------
