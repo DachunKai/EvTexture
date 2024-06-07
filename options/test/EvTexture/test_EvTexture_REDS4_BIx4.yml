@@ -1,0 +1,46 @@
+name: EvTexture_REDS4_BIx4
+model_type: E2VSRModel
+scale: 4
+num_gpu: auto
+manual_seed: 0
+
+datasets:
+  test:
+    name: REDS4
+    type: VideoWithEventsTestDataset
+    dataroot_gt: datasets/REDS4_h5/HR/test
+    dataroot_lq: datasets/REDS4_h5/LRx4/test
+    meta_info_file: basicsr/data/meta_info/meta_info_REDS_h5_test.txt
+    io_backend:
+      type: hdf5
+
+# network structures
+network_g:
+  type: EvTexture
+  num_feat: 64
+  num_block: 30
+
+# path
+path:
+  pretrain_network_g: experiments/pretrained_models/EvTexture/EvTexture_REDS_BIx4.pth
+  strict_load_g: true
+
+# validation settings
+val:
+  save_img: true
+  flip_seq: false
+  suffix: ~  # add suffix to saved images, if None, use exp name
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 0
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 0
+      test_y_channel: false
+    lpips:
+      type: calculate_lpips
+      crop_border: 0
+      test_y_channel: false

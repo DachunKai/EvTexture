@@ -45,7 +45,18 @@ Pre-trained models can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71
 
 The output results on REDS4 and Vid4 can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab), [google drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg) (n8hg).
 
-## Citation
+## :blush: Citation
+If you find the code and pre-trained models useful for your research, please consider citing our paper. :smiley:
+```
+@inproceedings{kai2024evtexture,
+  title={Ev{T}exture: {E}vent-driven {T}exture {E}nhancement for {V}ideo {S}uper-{R}esolution},
+  author={Kai, Dachun and Lu, Jiayao and Zhang, Yueyi and Sun, Xiaoyan},
+  booktitle={International Conference on Machine Learning},
+  year={2024},
+  organization={PMLR}
+}
+
+```
 
 ## License and Acknowledgement
 This project is released under the Apache-2.0 license. Our work is built upon [BasicSR](https://github.com/XPixelGroup/BasicSR), which is an open source toolbox for image/video restoration tasks. Thanks to the inspirations and codes from [RAFT](https://github.com/princeton-vl/RAFT) and [event_utils](https://github.com/TimoStoff/event_utils).
