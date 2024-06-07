@@ -14,7 +14,7 @@ This is the official Pytorch implementation of "EvTexture: Event-driven Texture 
 - [ ] Release training code
 - [ ] Release details to prepare datasets
 - [ ] Publish docker image
-- [x] Release pretrained models and test sets for quick testing
+- [x] 2024/06/08: Release pretrained models and test sets for quick testing
 - [x] 2024/06/07: Video demos released
 - [x] 2024/05/25: Initialize the repository
 - [x] 2024/05/02: :tada: :tada: Our paper was accepted in ICML'2024
@@ -38,34 +38,47 @@ https://github.com/DachunKai/EvTexture/assets/66354783/e1e6b340-64b3-4d94-90ee-5
 https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-ced0c1bff9c4
 
 ## Code
-### Model and results
-Pre-trained models can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab), [google drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg) (n8hg).
-* *EvTexture_REDS_BIx4.pth*: trained on REDS dataset with BI degradation for $4\times$ SR scale.
-* *EvTexture_Vimeo90K_BIx4.pth*: trained on Vimeo-90K dataset with BI degradation for $4\times$ SR scale.
+### Model, results and test sets
+* Pre-trained models can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab), [google drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg) (n8hg).
+  * *EvTexture_REDS_BIx4.pth*: trained on REDS dataset with BI degradation for $4\times$ SR scale.
+  * *EvTexture_Vimeo90K_BIx4.pth*: trained on Vimeo-90K dataset with BI degradation for $4\times$ SR scale.
 
-The output results on REDS4 and Vid4 can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab), [google drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg) (n8hg).
+* The output results on REDS4 and Vid4 can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab), [google drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg) (n8hg).
+
+* Test sets for REDS4 and Vid4 can be downloaded from [onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab), [google drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing), and [baidu cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg) (n8hg). Make sure to unzip them and place the folders in `datasets/REDS4_h5` and `datasets/Vid4_h5`.
+
 ### Installation
-We recommend setting up evtexture environment in either [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) or [Docker](https://www.docker.com/). We provide these two options, and **we also provide a Docker image**. :clap:
+We recommend setting up EvTexture environment in either [Conda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html) or [Docker](https://www.docker.com/). We provide these two options, and **we also provide a Docker image**. :clap:
+
+* Dependencies: [Miniconda](https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh), [CUDA Toolkit 11.1.1](https://developer.nvidia.com/cuda-11.1.1-download-archive)
+
+* Prepare installation packages: [torch 1.10.2+cu111](https://download.pytorch.org/whl/cu111/torch-1.10.2%2Bcu111-cp37-cp37m-linux_x86_64.whl), and [torchvision 0.11.3+cu111](https://download.pytorch.org/whl/cu111/torchvision-0.11.3%2Bcu111-cp37-cp37m-linux_x86_64.whl).
 
 1. Run in Conda
-* Environment: [Anaconda Python 3.7](https://www.anaconda.com/products/individual), [CUDA Toolkit 11.1.1](https://developer.nvidia.com/cuda-11.1.1-download-archive)
-
-* Prepare some installation packages: [torch 1.10.2+cu111](https://download.pytorch.org/whl/cu111/torch-1.10.2%2Bcu111-cp37-cp37m-linux_x86_64.whl), and [torchvision 0.11.3+cu111](https://download.pytorch.org/whl/cu111/torchvision-0.11.3%2Bcu111-cp37-cp37m-linux_x86_64.whl).
-
-```bash
-conda create -y -n evtexture python=3.7
-conda activate evtexture
-pip install torch-1.10.2+cu111-cp37-cp37m-linux_x86_64.whl
-pip install torchvision-0.11.3+cu111-cp37-cp37m-linux_x86_64.whl
-git clone https://github.com/DachunKai/EvTexture.git
-cd EvTexture
-pip install -r requirements.txt
-python setup.py develop
-```
-
-
-
+  ```bash
+  conda create -y -n evtexture python=3.7
+  conda activate evtexture
+  pip install torch-1.10.2+cu111-cp37-cp37m-linux_x86_64.whl
+  pip install torchvision-0.11.3+cu111-cp37-cp37m-linux_x86_64.whl
+  git clone https://github.com/DachunKai/EvTexture.git
+  cd EvTexture
+  pip install -r requirements.txt
+  python setup.py develop
+  ```
 2. Run in Docker
+
+  * Note: before run the docker image, install nvidia-docker first, [official intructions](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+
+  * [Option 1] Directly pull the pre-built and published docker image that we have provided from [Dockerhub](https://) and [Aliyun](https://).
+    ```bash
+    docker pull
+    ```
+
+  * [Option 2] We also provide a [Dockerfile](docker/Dockerfile) that can be used to build the image by ourselves.
+    ```bash
+    cd EvTexture
+    docker build -t evtexture ./docker
+    ```
 
 ## :blush: Citation
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :smiley:
