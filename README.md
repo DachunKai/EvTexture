@@ -8,7 +8,7 @@ This is the official Pytorch implementation of "EvTexture: Event-driven Texture 
 
 **Authors**: [Dachun Kai](https://github.com/DachunKai/)<sup>[:email:️](mailto:dachunkai@mail.ustc.edu.cn)</sup>, Jiayao Lu, [Yueyi Zhang](https://scholar.google.com.hk/citations?user=LatWlFAAAAAJ&hl=zh-CN&oi=ao)<sup>[:email:️](mailto:zhyuey@ustc.edu.cn)</sup>, [Xiaoyan Sun](https://scholar.google.com/citations?user=VRG3dw4AAAAJ&hl=zh-CN), *University of Science and Technology of China*
 
-**Feel free to ask questions. If you gain insights from our work, please don't hesitate to give us a :star:!**
+**Feel free to ask questions. If our work helps, please don't hesitate to give us a :star:!**
 
 ## :rocket: News
 - [ ] Release training code
