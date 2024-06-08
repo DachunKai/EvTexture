@@ -10,7 +10,7 @@ from .spynet_arch import SpyNet
 
 @ARCH_REGISTRY.register()
 class EvTexture(nn.Module):
-    """EvTexture: Event-driven Texture Enhancement for Video Super-Resolution
+    """EvTexture: Event-driven Texture Enhancement for Video Super-Resolution (ICML 2024)
        Note that: this class is for 4x VSR
 
     Args:
