@@ -73,7 +73,7 @@ https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-c
   source activate evtexture && cd EvTexture && python setup.py develop
   ```
 ### Test
-1. Download the pretrained models to `experiments/pretrained_models/EvTexture/`. ([Onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab)/[Google Drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing)/[Baidu Cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg)(n8hg)). The network architecture code is in [evtexture_arch.py](basicsr/archs/evtexture_arch.py).
+1. Download the pretrained models to `experiments/pretrained_models/EvTexture/`. ([Onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab)/[Google Drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing)/[Baidu Cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg)(n8hg)). The network architecture code is in [evtexture_arch.py](https://github.com/DachunKai/EvTexture/blob/main/basicsr/archs/evtexture_arch.py).
     * *EvTexture_REDS_BIx4.pth*: trained on REDS dataset with BI degradation for $4\times$ SR scale.
     * *EvTexture_Vimeo90K_BIx4.pth*: trained on Vimeo-90K dataset with BI degradation for $4\times$ SR scale.
 
