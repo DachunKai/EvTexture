@@ -12,9 +12,6 @@ ENV PATH /opt/conda/bin:$PATH
 ENV LD_LIBRARY_PATH /usr/local/cuda/extras/CUPTI/lib64:/usr/local/cuda/compat/lib:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/lib/x86_64-linux-gnu:/usr/local/cuda-11.1/lib64:$LD_LIBRARY_PATH
 ENV PIP_ROOT_USER_ACTION=ignore
 
-COPY torch-1.10.2+cu111-cp37-cp37m-linux_x86_64.whl /tmp/
-COPY torchvision-0.11.3+cu111-cp37-cp37m-linux_x86_64.whl /tmp/
-COPY miniconda.sh /tmp/
 COPY ./EvTexture /EvTexture
 
 RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
@@ -49,12 +46,13 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
 # =================================================================
 # Miniconda3
 # ----------------------------------------------------------------
+    wget --quiet https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O /tmp/miniconda.sh && \
     /bin/bash /tmp/miniconda.sh -b -p /opt/conda && \
 # ================================================================
 # dependencys for environment evtexture
     conda update -y conda && \
     conda create -y -n evtexture python=3.7 && \
-    /bin/bash -c "source activate evtexture && pip install --upgrade pip && pip --no-cache-dir install /tmp/torch-1.10.2+cu111-cp37-cp37m-linux_x86_64.whl && pip --no-cache-dir install /tmp/torchvision-0.11.3+cu111-cp37-cp37m-linux_x86_64.whl && cd /EvTexture && pip --no-cache-dir install -r requirements.txt && python setup.py develop" && \
+    /bin/bash -c "source activate evtexture && pip install --upgrade pip && pip --no-cache-dir install torch==1.10.2+cu111 torchvision==0.11.3+cu111 -f https://download.pytorch.org/whl/torch_stable.html && cd /EvTexture && pip --no-cache-dir install -r requirements.txt && python setup.py develop" && \
 # =================================================================
 # cleanup
 #-----------------------------------------------------------------
