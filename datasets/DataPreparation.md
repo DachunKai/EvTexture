@@ -90,64 +90,64 @@ We regroup the dataset into [HDF5](https://www.h5py.org/) format because it offe
 * Training set
 	* [REDS](https://seungjunnah.github.io/Datasets/reds.html) dataset. The meta info files are [meta_info_REDS_h5_train.txt](https://github.com/DachunKai/EvTexture/blob/main/basicsr/data/meta_info/meta_info_REDS_h5_train.txt) and [meta_info_REDS_h5_test.txt](https://github.com/DachunKai/EvTexture/blob/main/basicsr/data/meta_info/meta_info_REDS_h5_test.txt). Prepare REDS_h5 structure be:
 	```arduino
-		REDS_h5
-		├── HR
-		│   ├── train
-		│   │   ├── 001.h5
-		│   │   ├── ...
-		│   ├── test
-		│       ├── 000.h5
-		│       ├── ...
-		├── LRx4
-		│   ├── train
-		│   │   ├── 001.h5
-		│   │   ├── ...
-		│   ├── test
-		│       ├── 000.h5
-		│       ├── ...
+	REDS_h5
+	├── HR
+	│   ├── train
+	│   │   ├── 001.h5
+	│   │   ├── ...
+	│   ├── test
+	│       ├── 000.h5
+	│       ├── ...
+	├── LRx4
+	│   ├── train
+	│   │   ├── 001.h5
+	│   │   ├── ...
+	│   ├── test
+	│       ├── 000.h5
+	│       ├── ...
 	```
 	* [Viemo-90K](https://github.com/anchen1011/toflow) dataset. The meta info files are [meta_info_Vimeo_h5_train.txt](https://github.com/DachunKai/EvTexture/blob/main/basicsr/data/meta_info/meta_info_Vimeo_h5_train.txt) and [meta_info_Vimeo_h5_test.txt](https://github.com/DachunKai/EvTexture/blob/main/basicsr/data/meta_info/meta_info_Vimeo_h5_test.txt). Prepare Vimeo_h5 structure be:
 	```arduino
-		Vimeo_h5
-		├── HR
-		│   ├── train
-		│   │   ├── 00001_0001.h5
-		│   │   ├── ...
-		│   ├── test
-		│       ├── 00001_0266.h5
-		│       ├── ...
-		├── LRx4
-		│   ├── train
-		│   │   ├── 00001_0001.h5
-		│   │   ├── ...
-		│   ├── test
-		│       ├── 00001_0266.h5
-		│       ├── ...
+	Vimeo_h5
+	├── HR
+	│   ├── train
+	│   │   ├── 00001_0001.h5
+	│   │   ├── ...
+	│   ├── test
+	│       ├── 00001_0266.h5
+	│       ├── ...
+	├── LRx4
+	│   ├── train
+	│   │   ├── 00001_0001.h5
+	│   │   ├── ...
+	│   ├── test
+	│       ├── 00001_0266.h5
+	│       ├── ...
 	```
 	* [CED](https://rpg.ifi.uzh.ch/CED.html) dataset. The meta info files are [meta_info_CED_h5_train.txt](https://github.com/DachunKai/EvTexture/blob/main/basicsr/data/meta_info/meta_info_CED_h5_train.txt) and [meta_info_CED_h5_test.txt](https://github.com/DachunKai/EvTexture/blob/main/basicsr/data/meta_info/meta_info_CED_h5_test.txt). Prepare CED_h5 structure be:
 	```arduino
-		├────CED_h5
-		│   ├────HR
-		│   │   ├────train
-		│   │   │   ├────calib_fluorescent.h5
-		│   │   │   ├────...
-		│   │   ├────test
-		│   │       ├────indoors_foosball_2.h5
-		│   │       ├────...
-		│   ├────LRx2
-		│   │   ├────train
-		│   │   │   ├────calib_fluorescent.h5
-		│   │   │   ├────...
-		│   │   ├────test
-		│   │       ├────indoors_foosball_2.h5
-		│   │       ├────...
-		│   ├────LRx4
-		│       ├────train
-		│       │   ├────calib_fluorescent.h5
-		│       │   ├────...
-		│       ├────test
-		│           ├────indoors_foosball_2.h5
-		│           ├────...
+	├────CED_h5
+	│   ├────HR
+	│   │   ├────train
+	│   │   │   ├────calib_fluorescent.h5
+	│   │   │   ├────...
+	│   │   ├────test
+	│   │       ├────indoors_foosball_2.h5
+	│   │       ├────...
+	│   ├────LRx2
+	│   │   ├────train
+	│   │   │   ├────calib_fluorescent.h5
+	│   │   │   ├────...
+	│   │   ├────test
+	│   │       ├────indoors_foosball_2.h5
+	│   │       ├────...
+	│   ├────LRx4
+	│       ├────train
+	│       │   ├────calib_fluorescent.h5
+	│       │   ├────...
+	│       ├────test
+	│           ├────indoors_foosball_2.h5
+	│           ├────...
 	```
 
 * Testing set
@@ -155,15 +155,15 @@ We regroup the dataset into [HDF5](https://www.h5py.org/) format because it offe
     * [Vimeo-90K-T](https://github.com/anchen1011/toflow) dataset.
     * [Vid4](https://mmagic.readthedocs.io/en/stable/dataset_zoo/vid4.html) dataset. The meta info file is [meta_info_Vid4_h5_test.txt](https://github.com/DachunKai/EvTexture/blob/main/basicsr/data/meta_info/meta_info_Vid4_h5_test.txt). Prepare Vid4_h5 structure be:
 	```arduino
-		Vid4_h5
-		├── HR
-		│   ├── test
-		│   │   ├── calendar.h5
-		│   │   ├── ...
-		├── LRx4
-		│   ├── test
-		│       ├── calendar.h5
-		│       ├── ...
+	Vid4_h5
+	├── HR
+	│   ├── test
+	│   │   ├── calendar.h5
+	│   │   ├── ...
+	├── LRx4
+	│   ├── test
+	│       ├── calendar.h5
+	│       ├── ...
 	```
     * [CED](https://rpg.ifi.uzh.ch/CED.html) dataset.
 
