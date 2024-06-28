@@ -81,10 +81,9 @@ We regroup the dataset into [HDF5](https://www.h5py.org/) format because it offe
 	```
 
 * **Step 5: Downsample voxels.**
-
-	**[Note]**: If you are only inferring on your own low-resolution video, there is no need to downsample the voxels.
-
 	Apply bicubic downsample using [torch.nn.functional.interpolate](https://pytorch.org/docs/stable/generated/torch.nn.functional.interpolate.html) to converted event voxels to generate low-resolution event voxel.
+
+	**[Note]**: If you are only inferring on your own low-resolution video, there is no need to downsample the event voxels.
 
 ### Dataset Structure
 * Training set
