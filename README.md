@@ -11,7 +11,7 @@ Official Pytorch implementation for the "EvTexture: Event-driven Texture Enhance
 
 ## :rocket: News
 - [ ] Release training code
-- [ ] Release details to prepare datasets
+- [x] 2024/06/28: Release details to prepare datasets
 - [x] 2024/06/08: Publish docker image
 - [x] 2024/06/08: Release pretrained models and test sets for quick testing
 - [x] 2024/06/07: Video demos released
@@ -87,6 +87,25 @@ https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-c
       ./scripts/dist_test.sh [num_gpus] options/test/EvTexture/test_EvTexture_REDS4_BIx4.yml
       ```
       This will generate the inference results in `results/`. The output results on REDS4 and Vid4 can be downloaded from ([Releases](https://github.com/DachunKai/EvTexture/releases) / [Onedrive](https://1drv.ms/f/c/2d90e71fb9eb254f/EnMm8c2mP_FPv6lwt1jy01YB6bQhoPQ25vtzAhycYisERw?e=DiI2Ab) / [Google Drive](https://drive.google.com/drive/folders/1oqOAZbroYW-yfyzIbLYPMJ2ZQmaaCXKy?usp=sharing) / [Baidu Cloud](https://pan.baidu.com/s/161bfWZGVH1UBCCka93ImqQ?pwd=n8hg)(n8hg)).
+
+### Data Preparation
+* Both video and event data are required as input, as shown in the [snippet](https://github.com/DachunKai/EvTexture/blob/main/basicsr/archs/evtexture_arch.py#L70). We package each video and its event data into an [HDF5](https://docs.h5py.org/en/stable/quick.html#quick) file.
+
+* Example: The structure of `calendar.h5` file from the Vid4 dataset is shown below.
+
+  ```arduino
+  calendar.h5
+  ├── images
+  │   ├── 000000 # frame, ndarray, [H, W, C]
+  │   ├── ...
+  ├── voxels_f
+  │   ├── 000000 # forward event voxel, ndarray, [Bins, H, W]
+  │   ├── ...
+  ├── voxels_b
+  │   ├── 000000 # backward event voxel, ndarray, [Bins, H, W]
+  │   ├── ...
+  ```
+* To simulate and generate the event voxels, refer to the dataset preparation details in [DataPreparation.md](https://github.com/DachunKai/EvTexture/blob/main/datasets/DataPreparation.md).
 
 
 ## :blush: Citation
