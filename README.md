@@ -107,6 +107,8 @@ https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-c
   ```
 * To simulate and generate the event voxels, refer to the dataset preparation details in [DataPreparation.md](https://github.com/DachunKai/EvTexture/blob/main/datasets/DataPreparation.md).
 
+### Inference on your own video
+**:heart:Seeking Collaboration**: For issues [#6](https://github.com/DachunKai/EvTexture/issues/6) and [#7](https://github.com/DachunKai/EvTexture/issues/7), our method can indeed perform inference on videos without event data. The solution is to use an event camera simulator, such as [vid2e](https://github.com/uzh-rpg/rpg_vid2e), to generate event data from the video, and then input both the video data and the generated event data into our model. This part, however, may require extensive engineering work to package everything into a script, as detailed in [DataPreparation.md](https://github.com/DachunKai/EvTexture/blob/main/datasets/DataPreparation.md). We currently do not have enough time to undertake this task, so we are looking for collaborators to join us in this effort!:blush:
 
 ## :blush: Citation
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :smiley:
