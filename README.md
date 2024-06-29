@@ -52,7 +52,7 @@ https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-c
     ```
 * Run in Docker :clap:
 
-  Note: before running the Docker image, make sure to install nvidia-docker by following the [official intructions](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
+  Note: before running the Docker image, make sure to install nvidia-docker by following the [official instructions](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html).
 
   [Option 1] Directly pull the published Docker image we have provided from [Alibaba Cloud](https://cr.console.aliyun.com/cn-hangzhou/instances).
   ```bash
