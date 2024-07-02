@@ -1,8 +1,12 @@
 # [EvTexture (ICML 2024)](https://icml.cc/virtual/2024/poster/34032)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/evtexture-event-driven-texture-enhancement/video-super-resolution-on-vid4-4x-upscaling)](https://paperswithcode.com/sota/video-super-resolution-on-vid4-4x-upscaling?p=evtexture-event-driven-texture-enhancement)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/evtexture-event-driven-texture-enhancement/video-super-resolution-on-reds4-4x-upscaling)](https://paperswithcode.com/sota/video-super-resolution-on-reds4-4x-upscaling?p=evtexture-event-driven-texture-enhancement)
+
 Official Pytorch implementation for the "EvTexture: Event-driven Texture Enhancement for Video Super-Resolution" paper (ICML 2024).
 
 <p align="center">
-    🌐 <a href="https://dachunkai.github.io/evtexture.github.io/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/abs/2406.13457" target="_blank">Paper</a> | 🖼️ <a href="https://docs.google.com/presentation/d/1nbDb39TFb374DzBwdz5v20kIREUA0nBH/edit?usp=sharing" target="_blank">Poster</a> <br>
+    🌐 <a href="https://dachunkai.github.io/evtexture.github.io/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/abs/2406.13457" target="_blank">Paper</a> | 🖼️ <a href="https://docs.google.com/presentation/d/1nbDb39TFb374DzBwdz5v20kIREUA0nBH/edit?usp=sharing" target="_blank">Poster</a> <br> | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DachunKai/EvTexture/blob/main/EvTexture_test.ipynb)
 </p>
 
 **Authors**: [Dachun Kai](https://github.com/DachunKai/)<sup>[:email:️](mailto:dachunkai@mail.ustc.edu.cn)</sup>, Jiayao Lu, [Yueyi Zhang](https://scholar.google.com.hk/citations?user=LatWlFAAAAAJ&hl=zh-CN&oi=ao)<sup>[:email:️](mailto:zhyuey@ustc.edu.cn)</sup>, [Xiaoyan Sun](https://scholar.google.com/citations?user=VRG3dw4AAAAJ&hl=zh-CN), *University of Science and Technology of China*
@@ -11,6 +15,7 @@ Official Pytorch implementation for the "EvTexture: Event-driven Texture Enhance
 
 ## :rocket: News
 - [ ] Release training code
+- [x] 2024/07/02: Release the colab file for a quick test
 - [x] 2024/06/28: Release details to prepare datasets
 - [x] 2024/06/08: Publish docker image
 - [x] 2024/06/08: Release pretrained models and test sets for quick testing
