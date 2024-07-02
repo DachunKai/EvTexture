@@ -133,4 +133,4 @@ If you meet any problems, please describe them in issues or contact:
 * Dachun Kai: <dachunkai@mail.ustc.edu.cn>
 
 ## License and Acknowledgement
-This project is released under the Apache-2.0 license. Our work is built upon [BasicSR](https://github.com/XPixelGroup/BasicSR), which is an open source toolbox for image/video restoration tasks. Thanks to the inspirations and codes from [RAFT](https://github.com/princeton-vl/RAFT) and [event_utils](https://github.com/TimoStoff/event_utils).
+This project is released under the Apache-2.0 license. Our work is built upon [BasicSR](https://github.com/XPixelGroup/BasicSR), which is an open source toolbox for image/video restoration tasks. Thanks to the inspirations and codes from [RAFT](https://github.com/princeton-vl/RAFT), [event_utils](https://github.com/TimoStoff/event_utils) and [EvTexture-jupyter](https://github.com/camenduru/EvTexture-jupyter).
