@@ -6,7 +6,8 @@
 Official Pytorch implementation for the "EvTexture: Event-driven Texture Enhancement for Video Super-Resolution" paper (ICML 2024).
 
 <p align="center">
-    🌐 <a href="https://dachunkai.github.io/evtexture.github.io/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/abs/2406.13457" target="_blank">Paper</a> | 🖼️ <a href="https://docs.google.com/presentation/d/1nbDb39TFb374DzBwdz5v20kIREUA0nBH/edit?usp=sharing" target="_blank">Poster</a> <br> | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DachunKai/EvTexture/blob/main/EvTexture_test.ipynb)
+    🌐 <a href="https://dachunkai.github.io/evtexture.github.io/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/abs/2406.13457" target="_blank">Paper</a> | 🖼️ <a href="https://docs.google.com/presentation/d/1nbDb39TFb374DzBwdz5v20kIREUA0nBH/edit?usp=sharing" target="_blank">Poster</a> <br> | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DachunKai/EvTexture/blob/main/your_notebook.ipynb)
+
 </p>
 
 **Authors**: [Dachun Kai](https://github.com/DachunKai/)<sup>[:email:️](mailto:dachunkai@mail.ustc.edu.cn)</sup>, Jiayao Lu, [Yueyi Zhang](https://scholar.google.com.hk/citations?user=LatWlFAAAAAJ&hl=zh-CN&oi=ao)<sup>[:email:️](mailto:zhyuey@ustc.edu.cn)</sup>, [Xiaoyan Sun](https://scholar.google.com/citations?user=VRG3dw4AAAAJ&hl=zh-CN), *University of Science and Technology of China*
