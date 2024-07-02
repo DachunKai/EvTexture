@@ -5,15 +5,15 @@
 
 Official Pytorch implementation for the "EvTexture: Event-driven Texture Enhancement for Video Super-Resolution" paper (ICML 2024).
 
-<table align="center">
+<table align="center" style="border-collapse: collapse; border: none;">
   <tr>
-    <td>🌐 <a href="https://dachunkai.github.io/evtexture.github.io/" target="_blank">Project</a></td>
-    <td>|</td>
-    <td>📃 <a href="https://arxiv.org/abs/2406.13457" target="_blank">Paper</a></td>
-    <td>|</td>
-    <td>🖼️ <a href="https://docs.google.com/presentation/d/1nbDb39TFb374DzBwdz5v20kIREUA0nBH/edit?usp=sharing" target="_blank">Poster</a></td>
-    <td>|</td>
-    <td>
+    <td style="border: none; padding: 5px;">🌐 <a href="https://dachunkai.github.io/evtexture.github.io/" target="_blank">Project</a></td>
+    <td style="border: none; padding: 5px;">|</td>
+    <td style="border: none; padding: 5px;">📃 <a href="https://arxiv.org/abs/2406.13457" target="_blank">Paper</a></td>
+    <td style="border: none; padding: 5px;">|</td>
+    <td style="border: none; padding: 5px;">🖼️ <a href="https://docs.google.com/presentation/d/1nbDb39TFb374DzBwdz5v20kIREUA0nBH/edit?usp=sharing" target="_blank">Poster</a></td>
+    <td style="border: none; padding: 5px;">|</td>
+    <td style="border: none; padding: 5px;">
       <a href="https://colab.research.google.com/github/DachunKai/EvTexture/blob/main/your_notebook.ipynb" target="_blank">
         <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
       </a>
