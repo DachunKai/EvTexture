@@ -15,7 +15,6 @@ requests
 scikit-image
 scipy
 setuptools
-tb-nightly
 tensorboard
 tensorboardX
 torch>=1.10.2
