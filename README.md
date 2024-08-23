@@ -1,4 +1,4 @@
-# [EvTexture (ICML 2024)](https://icml.cc/virtual/2024/poster/34032)
+# [EvTexture (ICML 2024)](https://proceedings.mlr.press/v235/kai24a.html)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/evtexture-event-driven-texture-enhancement/video-super-resolution-on-vid4-4x-upscaling)](https://paperswithcode.com/sota/video-super-resolution-on-vid4-4x-upscaling?p=evtexture-event-driven-texture-enhancement)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/evtexture-event-driven-texture-enhancement/video-super-resolution-on-reds4-4x-upscaling)](https://paperswithcode.com/sota/video-super-resolution-on-reds4-4x-upscaling?p=evtexture-event-driven-texture-enhancement)
@@ -119,13 +119,14 @@ https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-c
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :smiley:
 ```
 @inproceedings{kai2024evtexture,
-  title={Ev{T}exture: {E}vent-driven {T}exture {E}nhancement for {V}ideo {S}uper-{R}esolution},
+  title={{E}v{T}exture: {E}vent-driven {T}exture {E}nhancement for {V}ideo {S}uper-{R}esolution},
   author={Kai, Dachun and Lu, Jiayao and Zhang, Yueyi and Sun, Xiaoyan},
-  booktitle={International Conference on Machine Learning},
+  booktitle={Proceedings of the 41st International Conference on Machine Learning},
+  pages={22817--22839},
   year={2024},
-  organization={PMLR}
+  volume={235},
+  publisher={PMLR}
 }
-
 ```
 
 ## Contact
