@@ -13,6 +13,7 @@ datasets/*/
 .github/*
 .vscode/*
 experiments/*
+!experiments/pretrained_models/EvTexture/.gitkeep
 results/*
 tb_logger/*
 wandb/*
