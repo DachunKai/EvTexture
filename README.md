@@ -14,7 +14,7 @@ Official Pytorch implementation for the "EvTexture: Event-driven Texture Enhance
 **Feel free to ask questions. If our work helps, please don't hesitate to give us a :star:!**
 
 ## :rocket: News
-- [ ] Release training code
+- [ ] Provide a script for inference on the user's own video
 - [x] 2024/07/02: Release the colab file for a quick test
 - [x] 2024/06/28: Release details to prepare datasets
 - [x] 2024/06/08: Publish docker image
@@ -113,7 +113,7 @@ https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-c
 * To simulate and generate the event voxels, refer to the dataset preparation details in [DataPreparation.md](https://github.com/DachunKai/EvTexture/blob/main/datasets/DataPreparation.md).
 
 ### Inference on your own video
-> **:heart: Seeking Collaboration**: For issues [#6](https://github.com/DachunKai/EvTexture/issues/6) and [#7](https://github.com/DachunKai/EvTexture/issues/7), our method can indeed perform inference on videos without event data. The solution is to use an event camera simulator, such as [vid2e](https://github.com/uzh-rpg/rpg_vid2e), to generate event data from the video, and then input both the video data and the generated event data into our model. This part, however, may require extensive engineering work to package everything into a script, as detailed in [DataPreparation.md](https://github.com/DachunKai/EvTexture/blob/main/datasets/DataPreparation.md). We currently do not have enough time to undertake this task, so we are looking for collaborators to join us in this effort! :blush:
+We are developing convenient scripts, and possibly an app or software, to allow users to quickly use our EvTexture model to upscale their own videos. However, our time is limited, so please stay tuned!:hourglass:
 
 ## :blush: Citation
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :smiley:
