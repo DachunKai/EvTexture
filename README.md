@@ -113,7 +113,7 @@ https://github.com/DachunKai/EvTexture/assets/66354783/01880c40-147b-4c02-8789-c
 * To simulate and generate the event voxels, refer to the dataset preparation details in [DataPreparation.md](https://github.com/DachunKai/EvTexture/blob/main/datasets/DataPreparation.md).
 
 ### Inference on your own video
-:hammer_and_wrench: We are developing a convenient script to allow users to quickly use our EvTexture model to upscale their own videos. However, our time is limited, so please stay tuned!
+:hammer_and_wrench: We are developing a convenient script to allow users to quickly use our EvTexture model to upscale their own videos. However, our spare time is limited, so please stay tuned!
 
 ## :blush: Citation
 If you find the code and pre-trained models useful for your research, please consider citing our paper. :smiley:
