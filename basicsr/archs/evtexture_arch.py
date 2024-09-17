@@ -71,9 +71,9 @@ class EvTexture(nn.Module):
         """Forward function of EvTexture
 
         Args:
-            imgs: Input frames with shape (b, n, c, h, w). n is the number of frames.
-            voxels_f: forward event voxel grids with shape (b, n-1 , c, h, w).
-            voxels_b: backward event voxel grids with shape (b, n-1 , c, h, w).
+            imgs: Input frames with shape (b, n, c, h, w). b is batch size. n is the number of frames, and c equals 3 (RGB channels).
+            voxels_f: forward event voxel grids with shape (b, n-1, Bins, h, w). n-1 is intervals between n frames.
+            voxels_b: backward event voxel grids with shape (b, n-1, Bins, h, w).
 
         Output:
             out_l: output frames with shape (b, n, c, 4h, 4w)
