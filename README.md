@@ -1,8 +1,5 @@
 # [EvTexture (ICML 2024)](https://proceedings.mlr.press/v235/kai24a.html)
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/evtexture-event-driven-texture-enhancement/video-super-resolution-on-vid4-4x-upscaling)](https://paperswithcode.com/sota/video-super-resolution-on-vid4-4x-upscaling?p=evtexture-event-driven-texture-enhancement)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/evtexture-event-driven-texture-enhancement/video-super-resolution-on-reds4-4x-upscaling)](https://paperswithcode.com/sota/video-super-resolution-on-reds4-4x-upscaling?p=evtexture-event-driven-texture-enhancement)
-
 Official Pytorch implementation for the "EvTexture: Event-driven Texture Enhancement for Video Super-Resolution" paper (ICML 2024).
 
 <p align="center">
