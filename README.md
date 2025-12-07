@@ -10,8 +10,10 @@ Official Pytorch implementation for the "EvTexture: Event-driven Texture Enhance
 
 **Feel free to ask questions. If our work helps, please don't hesitate to give us a :star:!**
 
+> **[News]** An extension of this work, **EvTexture++**, is currently under review. The source code and pre-trained models for EvTexture++ will be released in this repository soon.
+
 ## :rocket: News
-- [ ] Provide a script for inference on the user's own video
+<!-- - [ ] Provide a script for inference on the user's own video -->
 - [x] 2024/07/02: Release the colab file for a quick test
 - [x] 2024/06/28: Release details to prepare datasets
 - [x] 2024/06/08: Publish docker image
