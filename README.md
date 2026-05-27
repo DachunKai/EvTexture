@@ -126,8 +126,11 @@ If the code and pre-trained models facilitate your research, please consider cit
   title={{E}v{T}exture++: {E}vent-{D}riven {T}exture {E}nhancement for {V}ideo {S}uper-{R}esolution},
   author={Kai, Dachun and Lu, Jiayao and Zhang, Yueyi and Sun, Xiaoyan},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  volume={48},
+  number={6},
+  pages={6642--6659},
   year={2026},
-  doi={10.1109/TPAMI.2026.3660020}
+  publisher={IEEE}
 }
 
 @inproceedings{kai2024evtexture,
