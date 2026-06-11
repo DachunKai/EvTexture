@@ -6,7 +6,7 @@ Official PyTorch implementation for the "EvTexture: Event-driven Texture Enhance
     <b>EvTexture (ICML 2024)</b>:
     🌐 <a href="https://dachunkai.github.io/evtexture.github.io/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/abs/2406.13457" target="_blank">Paper</a> | 🖼️ <a href="https://docs.google.com/presentation/d/1nbDb39TFb374DzBwdz5v20kIREUA0nBH/edit?usp=sharing" target="_blank">Poster</a> <br>
     <b>EvTexture++ (TPAMI 2026)</b>:
-    📃 <a href="https://ieeexplore.ieee.org/document/11369964" target="_blank">IEEE Xplore</a>
+    🌐 <a href="https://dachunkai.github.io/evtexture-project-page/" target="_blank">Project</a> | 📃 <a href="https://ieeexplore.ieee.org/document/11369964" target="_blank">IEEE Xplore</a> | 🖼️ <a href="https://drive.google.com/file/d/1OAuycvMbkZbxp93M4BbFDgYz7WoiD19G/view?usp=drive_link" target="_blank">Poster</a> <br>
 </p>
 
 
